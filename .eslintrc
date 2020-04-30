@@ -1,0 +1,71 @@
+{
+  "extends": ["eslint:recommended", "plugin:jsx-a11y/recommended"],
+  "globals": {
+    "assert": false,
+    "fetch": false,
+    "describe": false,
+    "it": false,
+    "before": false,
+    "beforeEach": false,
+    "after": false,
+    "afterEach": false,
+    "browser": true,
+    "$": true,
+    "process": true,
+    "location": true,
+    "Blob": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalDecorators": true
+    }
+  },
+  "plugins": ["react", "jsx-a11y", "eslint-plugin-react"],
+  "rules": {
+    "no-unused-vars": ["warn", {"vars": "all", "args": "after-used"}],
+    "import/imports-first": "off",
+    "no-debugger": "off",
+    "camelcase": "off",
+    "eqeqeq": "off",
+    "space-before-function-paren": "off",
+    "quotes": "off",
+    "no-multiple-empty-lines": "warn",
+    "no-mixed-spaces-and-tabs": "off",
+    "semi": "warn",
+    "no-undef": "error",
+    "import/no-duplicates": "off",
+    "no-useless-constructor": "warn",
+    "spaced-comment": "off",
+    "no-return-assign": "warn",
+    "no-trailing-spaces": "off",
+    "no-constant-condition": "warn",
+    "jsx-quotes": "off",
+    "react/self-closing-comp": "warn",
+    "react/prop-types": "warn",
+    "react/jsx-no-bind": "warn",
+    "react/jsx-indent": "warn",
+    "eol-last": "warn",
+    "react/jsx-boolean-value": "off",
+    "react/jsx-no-duplicate-props": 1,
+    "react/no-unused-prop-types": "warn",
+    "react/jsx-uses-vars": 1,
+    "no-template-curly-in-string": "warn",
+    "padded-blocks": "off",
+    "space-infix-ops": "off",
+    "comma-dangle": "off",
+    "indent": "warn",
+    "react/jsx-tag-spacing": "warn",
+    "space-in-parens": "warn",
+    "import/no-webpack-loader-syntax": "off",
+    "no-eval": 1
+  },
+  "env": {
+    "jquery": true,
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "es6": true
+  }
+}

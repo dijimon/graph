@@ -1,0 +1,25 @@
+.graph {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.graph h4 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    font-size: 14px;
+}
+.form div {
+    margin-right: 15px;
+}
+
+.form div label {
+    display: block;
+}
