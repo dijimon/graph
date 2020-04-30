@@ -7,7 +7,6 @@ import {saveGraphParams} from "@redux/actions";
 import {getRandomColor} from "@/utils/helpers";
 
 const Graph = (props) => {
-    debugger;
     const [graphArea, setGraphArea] = useState(null);
     const [state, setState] = useState({
         from: props.graphParams.from,
@@ -30,11 +29,12 @@ const Graph = (props) => {
         });
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         const from = Number(state.from);
         const to = Number(state.to);
         const step = Number(state.step);
-        debugger;
+
         props.fetchGraphData({from, to, step});
         props.saveGraphParams({from, to, step});
     };

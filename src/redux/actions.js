@@ -1,3 +1,4 @@
+import {appConfig} from '@/config';
 import {
     FETCH_GRAPH_DATA,
     SAVE_GRAPH_PARAMS,
@@ -47,7 +48,7 @@ export function fetchGraphData(params) {
             //Uncomment this block to get data using API
             //****************************************************
 
-            /*const response = await fetch('urlToGetData', {
+            /*const response = await fetch(`${appConfig.baseURL}/graphs?from=${params.from}&to=${params.to}&step=${params.step}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
