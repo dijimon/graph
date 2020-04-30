@@ -1,4 +1,4 @@
-# Graphics builder
+# Graphics drawer
 
 To run the app just do the following steps in terminal:
 
