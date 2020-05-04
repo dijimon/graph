@@ -7,6 +7,9 @@ import {rootReducer} from '@redux/rootReducer.js';
 import {Router} from 'react-router-dom';
 import history from './history';
 
+//Styles
+import Styles from './styles/styles.css';
+
 //Component
 import Application from '@pages';
 

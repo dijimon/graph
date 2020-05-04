@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
-import s from './styles.css';
+import s from './styles.scss';
 
 import {fetchGraphData} from "@redux/actions";
 import {saveGraphParams} from "@redux/actions";
@@ -44,15 +44,15 @@ const Graph = (props) => {
             <form onSubmit={handleSubmit} className={s.form}>
                 <div>
                     <label>From:</label>
-                    <input name="from" type="text" value={state.from} onChange={handleChange} />
+                    <input name="from" type="text" placeholder="input from" value={state.from} onChange={handleChange} />
                 </div>
                 <div>
                     <label>To:</label>
-                    <input name="to" type="text" value={state.to} onChange={handleChange} />
+                    <input name="to" type="text" placeholder="input to" value={state.to} onChange={handleChange} />
                 </div>
                 <div>
                     <label>Step:</label>
-                    <input name="step" type="text" value={state.step} onChange={handleChange} />
+                    <input name="step" type="text" placeholder="input step" onChange={handleChange} />
                 </div>
                 <div>
                     <label>&nbsp;</label>
