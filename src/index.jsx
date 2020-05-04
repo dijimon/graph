@@ -8,7 +8,7 @@ import {Router} from 'react-router-dom';
 import history from './history';
 
 //Styles
-import Styles from './styles/styles.css';
+import Styles from './styles/styles.scss';
 
 //Component
 import Application from '@pages';
